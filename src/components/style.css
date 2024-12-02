@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    padding: 2rem;
+    text-align: center;
+}
+.loading{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.tours{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+.tour{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 300px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.tour img{
+    width: 100%;
+    border-radius: 8px;
+}
+.tour-info h3{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.tour-info h4{
+    font-size: 1rem;
+    color: #007b5a;
+}
+
+.show-more-button,
+.remove-tour-button{
+    background: #007b5a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.refresh-button{
+    background: #ff6f61;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
