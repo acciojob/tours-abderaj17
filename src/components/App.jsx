@@ -53,6 +53,10 @@ const App = () => {
     setLoading(false);
   }, 200);
  }
+
+ const removeTour=(id)=>{
+  setTours(tours.filter((tour)=> tour.id !== id));
+ }
   useEffect(()=>{
     fetchTours();
   },[]);
@@ -64,7 +68,7 @@ const App = () => {
   if(tours.length===0){
     return (
       <div className="no-tours">
-        <h2>To Tours Left</h2>
+        <h2>No Tours Left</h2>
         <button onClick={fetchTours} className="refresh-button">
           Refresh
         </button>
@@ -74,7 +78,7 @@ const App = () => {
  
     return(
       <main id="main">
-<Tours tours={tours} removeTour={setTours}/>
+<Tours tours={tours} removeTour={removeTour}/>
       </main>
     )
 }
